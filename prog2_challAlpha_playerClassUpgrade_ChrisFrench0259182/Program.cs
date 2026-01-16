@@ -25,22 +25,46 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
             player1.HUD();
             player2.HUD();
 
-
             Console.ReadKey(true);
 
             player1.TakeDamage();
 
             player2.TakeDamage();
 
+            Console.ReadKey(true);
+            Console.Clear();
+
+            player1.HUD();
+            player2.HUD();
+
+            Console.ReadKey(true);
+
+            player1.TakeDamage();
+            player1.LevelUp();
+            player2.TakeDamage();
+
+            Console.ReadKey(true);
+            Console.Clear();
+
+            player1.HUD();
+            player2.HUD();
+
+            Console.ReadKey(true);
+
+            player1.TakeDamage();
+            
+            player2.TakeDamage();
+            player2.LevelUp();
+            Console.ReadKey(true);
+            Console.Clear();
+
+            player1.HUD();
+            player2.HUD();
 
 
 
-
-
-
-
-
-
+            Console.WriteLine($"Press any key to exit...  ");
+            Console.ReadKey(true);
             Console.ResetColor();
         }
     }
@@ -90,7 +114,6 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
 
             Random Dmg = new Random();
             int amount = Dmg.Next(5, 21);
-
             _currentHealth -= amount;
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.Write($"\n {_name} took ");
@@ -99,11 +122,14 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine($"damage  ");
             if (_currentHealth < 0) _currentHealth = 0;
+            
         }
 
         public void LevelUp()
         {
             _level++;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"\n {_name} Has ained a level! WEEEE!!!!! ");
         }
 
 
