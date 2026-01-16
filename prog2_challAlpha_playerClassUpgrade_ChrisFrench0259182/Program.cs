@@ -63,7 +63,40 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
             player1.PrintStats();
             player2.PrintStats();
 
+            Console.ReadKey(true);
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine($" Creating a list of 100 players.");
 
+            List<Player>adventurHall= new List<Player>();
+            for(int i = 1; i<=100;i++)
+            {
+                Player _PC = new Player();
+
+                _PC.SetName($"Adventurer_{i}");
+
+                adventurHall.Add(_PC);  
+
+            }
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"\nSuccessfully created ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write($"{adventurHall.Count} " );
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine($"players in the list.");
+            Console.ReadKey(true);
+
+
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"\nYour party is ready... ");
+            Random party = new Random();
+            int draft = party.Next(1, 101);
+
+            adventurHall[draft].PrintStats();
+            adventurHall[draft].PrintStats();
+            adventurHall[draft].PrintStats();
+            adventurHall[draft].PrintStats();
+            adventurHall[draft].PrintStats();
 
             Console.WriteLine($"Press any key to exit...  ");
             Console.ReadKey(true);
@@ -130,7 +163,7 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
         public void LevelUp()
         {
             _level++;
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write($"\n {_name} Has ained a level! WEEEE!!!!! ");
         }
 
