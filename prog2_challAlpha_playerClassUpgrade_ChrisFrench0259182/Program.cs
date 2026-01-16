@@ -12,4 +12,64 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
         {
         }
     }
-}
+
+    public class Player
+    {
+        string _name;
+        int _currentHealth;  
+        int _maxHealth;
+        int _level;
+    }
+
+    public Player()
+    {
+        _name = "default";
+        _currentHealth = 100;
+        _maxHealth = 100;
+        _level = 1;
+    }
+
+    public void SetName(string _newName)
+        {
+            _name = _newName;
+
+        }
+
+
+    public void HUD()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"Name:  ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($" {_name}");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"Health:");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($" {_currentHealth}/{_maxHealth}");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"Level: ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"{_level}");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
