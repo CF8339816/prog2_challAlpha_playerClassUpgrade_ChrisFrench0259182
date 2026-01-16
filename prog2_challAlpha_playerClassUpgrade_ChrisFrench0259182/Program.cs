@@ -88,15 +88,22 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
 
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write($"\nYour party is ready... ");
-            Random party = new Random();
-            int draft = party.Next(1, 101);
+            Console.WriteLine($"\nYour party is ready... \n");
+            //Random party = new Random();
+            //int draft = party.Next(1, 101);
 
-            adventurHall[draft].PrintStats();
-            adventurHall[draft].PrintStats();
-            adventurHall[draft].PrintStats();
-            adventurHall[draft].PrintStats();
-            adventurHall[draft].PrintStats();
+            //adventurHall[draft].PrintStats();
+            //adventurHall[draft].PrintStats();
+            //adventurHall[draft].PrintStats();
+            //adventurHall[draft].PrintStats();
+            //adventurHall[draft].PrintStats();
+
+            adventurHall[20].PrintStats();
+            adventurHall[35].PrintStats();
+            adventurHall[89].PrintStats();
+            adventurHall[54].PrintStats();
+            adventurHall[11].PrintStats();
+
 
             Console.WriteLine($"Press any key to exit...  ");
             Console.ReadKey(true);
