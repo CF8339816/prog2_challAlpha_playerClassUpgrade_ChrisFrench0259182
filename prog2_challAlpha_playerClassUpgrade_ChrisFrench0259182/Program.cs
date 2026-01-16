@@ -10,6 +10,18 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
     {
         static void Main(string[] args)
         {
+            Player player1 = new Player();
+            Player player2 = new Player();
+            player1.SetName("Generic Hero 1");
+            player2.SetName("Generic Hero 2");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(" player stats ");
+            player1.HUD();
+            player2.HUD();
+
+
+
+            Console.ResetColor();
         }
     }
 
@@ -51,7 +63,6 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"{_level}");
         }
-
 
 
 
