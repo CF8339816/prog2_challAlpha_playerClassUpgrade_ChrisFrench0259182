@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182", "prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182\prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182.csproj", "{4121C5CF-6931-43DC-B893-4427F3F018BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4121C5CF-6931-43DC-B893-4427F3F018BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4121C5CF-6931-43DC-B893-4427F3F018BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4121C5CF-6931-43DC-B893-4427F3F018BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4121C5CF-6931-43DC-B893-4427F3F018BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B81D7E4-8DE8-47A8-A15D-40268A7AA58A}
+	EndGlobalSection
+EndGlobal
