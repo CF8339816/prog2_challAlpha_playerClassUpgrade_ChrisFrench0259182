@@ -22,44 +22,46 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
             player2.SetName("Generic Hero 2");
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(" player stats ");
-            player1.HUD();
-            player2.HUD();
+            player1.PrintStats();
+            player2.PrintStats();
 
             Console.ReadKey(true);
 
             player1.TakeDamage();
-
+           // Console.ReadKey(true);
             player2.TakeDamage();
 
             Console.ReadKey(true);
             Console.Clear();
 
-            player1.HUD();
-            player2.HUD();
+            player1.PrintStats();
+            player2.PrintStats();
 
             Console.ReadKey(true);
 
             player1.TakeDamage();
             player1.LevelUp();
+           // Console.ReadKey(true);
             player2.TakeDamage();
 
             Console.ReadKey(true);
             Console.Clear();
 
-            player1.HUD();
-            player2.HUD();
+            player1.PrintStats();
+            player2.PrintStats();
 
             Console.ReadKey(true);
 
             player1.TakeDamage();
-            
+           // Console.ReadKey(true);
             player2.TakeDamage();
             player2.LevelUp();
+
             Console.ReadKey(true);
             Console.Clear();
 
-            player1.HUD();
-            player2.HUD();
+            player1.PrintStats();
+            player2.PrintStats();
 
 
 
@@ -75,7 +77,7 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
         int _currentHealth;
         int _maxHealth;
         int _level;
-
+        Random Dmg = new Random();
 
         public Player()
         {
@@ -92,7 +94,7 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
         }
 
 
-        public void HUD()
+        public void PrintStats()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.Write($"Name:  ");
@@ -112,7 +114,7 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
         public void TakeDamage()
         {
 
-            Random Dmg = new Random();
+            //Random Dmg = new Random();
             int amount = Dmg.Next(5, 21);
             _currentHealth -= amount;
             Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -122,7 +124,7 @@ namespace prog2_challAlpha_playerClassUpgrade_ChrisFrench0259182
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine($"damage  ");
             if (_currentHealth < 0) _currentHealth = 0;
-            
+            //return;
         }
 
         public void LevelUp()
